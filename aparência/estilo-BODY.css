@@ -1,0 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: goldenrod;
+    margin: 0px;
+}

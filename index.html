@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jogo Palavra Misturada</title>
+        <script src="../PalavraFormada/scripting/jogo.js"></script>
+        <link rel="stylesheet" href="../PalavraFormada/aparência/estilo-BODY.css">
+        <link rel="stylesheet" href="../PalavraFormada/aparência/estilo-JOGO.css">
+    </head>
+
+    <body>
+        <div>
+            <h1 class="titulodojogo">JOGO PALAVRA SECRETA</h1>
+        </div>
+
+        <div id="FUNDODOJOGO">
+            <!--
+            <div class="PAINELDAPALAVRA">
+                <h3 class="titulodojogo">1</h3>
+            </div>
+            -->
+
+            <div class="quadrodapalavra">
+                <!--<h3 class="titulodojogo">2</h3>-->
+                <div class="painel-palavra">
+                    <input id="letra1" onclick="juntarLetra( pegarLetra( this ), palavra, tamanho )" type="button" value="A">
+
+                    <input id="letra2" onclick="juntarLetra()" type="button" value="B">
+
+                    <input id="letra3" onclick="juntarLetra()" type="button" value="C">
+
+                    <input id="letra4" onclick="juntarLetra()" type="button" value="D">
+
+                    <input id="letra5" onclick="juntarLetra()" type="button" value="E">
+
+                    <input id="letra6" onclick="juntarLetra()" type="button" value="F">
+
+                    <input id="letra7" onclick="juntarLetra()" type="button" value="G">
+
+                    <input id="letra8" onclick="juntarLetra()" type="button" value="H">
+
+                    <input id="letra9" onclick="juntarLetra()" type="button" value="I">
+                </div>
+
+                <div class="painel-resposta">
+                    <input type="search" name="sequência" id="RESULTADO">
+                </div>
+
+                <div class="painel-opcoes">
+                    <input class="botao" type="button" value="Novo" class="botao">
+
+                    <input class="botao" type="button" value="Repetir">
+
+                    <input class="botao" type="button" value="Mostrar">
+
+                    <input class="botao" type="button" value="Ajuda">
+
+                    <div class="botao">
+                        <input class="marcador" type="checkbox" name="Difícil" value="dificil">Difícil
+                        
+                        <br>
+                    </div>
+                </div>
+            </div>
+            
+            <!--
+            <div class="PAINELDAPALAVRA">
+                <h3 class="titulodojogo">3</h3>
+            </div>
+            -->
+        </div>
+
+        <div class="guia">
+            <h1 class="titulodojogo">GUIA</h1>
+        </div>
+    </body>
+</html>
