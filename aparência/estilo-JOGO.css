@@ -50,6 +50,9 @@ body {
 }
 .painel-palavra > *{
     font-size: 24px;
+    color: royalblue;
+    font-size: xx-large;
+    font-weight: 700;
     border: 0px;
     padding: 0px;
     width: 54px;
@@ -62,10 +65,18 @@ body {
     width: 164px;
     height: 36px;
     display: flex;
+    color: white;
     /* align-self: flex-end; */
 }
 #RESULTADO {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     align-self: center;
+    color: royalblue;
+    font-size: xx-large;
+    font-weight: 700;
+    /* display: none; */
     width: 164px;
 }
 
@@ -84,7 +95,8 @@ body {
     height: 40px;
     display: flex;
     justify-content: center;
-    color: darkgoldenrod;
+    color: white;
+    background-color: goldenrod;
     /* justify-content: space-evenly; */
     font-size: 23px;
 }

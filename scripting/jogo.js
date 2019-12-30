@@ -18,3 +18,5 @@ function juntarLetra( letra, palavra, tamanho ){
 function pegarLetra( elemento ){
     return elemento.value;
 }
+
+
