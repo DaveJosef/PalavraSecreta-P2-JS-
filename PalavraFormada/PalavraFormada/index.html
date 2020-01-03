@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jogo Palavra Misturada</title>
+        <script src="scripting/jogo.js" defer="defer"></script>
+        <link rel="stylesheet" href="aparência/estilo-BODY.css">
+        <link rel="stylesheet" href="aparência/estilo-JOGO.css">
+    </head>
+
+    <body onload="impedirZoom()">
+        <div>
+            <h1 class="titulodojogo">JOGO PALAVRA SECRETA</h1>
+        </div>
+
+        <div id="FUNDODOJOGO">
+            <!--
+            <div class="PAINELDAPALAVRA">
+                <h3 class="titulodojogo">1</h3>
+            </div>
+            -->
+            <div class="quadrodapalavra">
+                <!--<h3 class="titulodojogo">2</h3>-->
+                <div class="painel-palavra" onclick="verificarPalavra()">
+                    <!--
+                    <input id="?" type="button" value="?" onclick="Assembly( this )" >
+                    -->
+                    <input id="letra1" type="button" value="A" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[0] )" >
+
+                    <input id="letra2" type="button" value="B" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[1] )" >
+
+                    <input id="letra3" type="button" value="C" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[2] )" >
+
+                    <input id="letra4" type="button" value="D" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[3] )" >
+
+                    <input id="letra5" type="button" value="E" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[4] )" >
+
+                    <input id="letra6" type="button" value="F" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[5] )" >
+
+                    <input id="letra7" type="button" value="G" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[6] )" >
+
+                    <input id="letra8" type="button" value="H" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[7] )" >
+
+                    <input id="letra9" type="button" value="I" onclick="Assembly( this )" onload="escreverTexto( this, palavraMisturada[8] )" >
+                </div>
+                <div class="painel-resposta">
+                    <!--<input type="search" name="sequência" id="RESULTADO">-->
+                    <div id="RESULTADO">
+                        <p>Resposta*</p>
+                    </div>
+                </div>
+
+                <!--
+                <div class="painel-opcoes">
+                    <input class="botao" type="button" value="Novo" class="botao">
+
+                    <input class="botao" type="button" value="Repetir">
+
+                    <input class="botao" type="button" value="Mostrar">
+
+                    <input class="botao" type="button" value="Ajuda">
+
+                    <div class="botao">
+                        <input class="marcador" type="checkbox" name="Difícil" value="dificil">Difícil
+                        
+                        <br>
+                    </div>
+                </div>
+                -->
+            </div>
+            
+            <div class="cronometro" onload="montarCronometro( this )">
+                <h3 class="titulodojogo">3</h3>
+            </div>
+        </div>
+
+        <div class="guia">
+            <input class="botao titulo" type="button" value="Novo" class="botao">
+
+            <input class="botao" type="button" value="Repetir">
+
+            <input class="botao" type="button" value="Mostrar">
+
+            <input class="botao" type="button" value="Ajuda">
+
+            <div class="botao">
+                <input class="marcador" type="checkbox" name="Difícil" value="dificil">Difícil
+                
+                <br>
+            </div>
+
+            <h1 class="titulodojogo">GUIA</h1>
+        </div>
+    </body>
+</html>
