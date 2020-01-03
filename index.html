@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Jogo Palavra Misturada</title>
-        <script src="../PalavraFormada/scripting/jogo.js"></script>
+        <script src="../PalavraFormada/scripting/jogo.js" defer="defer"></script>
         <link rel="stylesheet" href="../PalavraFormada/aparência/estilo-BODY.css">
         <link rel="stylesheet" href="../PalavraFormada/aparência/estilo-JOGO.css">
     </head>
 
-    <body>
+    <body onload="impedirZoom()">
         <div>
             <h1 class="titulodojogo">JOGO PALAVRA SECRETA</h1>
         </div>
@@ -22,29 +22,30 @@
                 <h3 class="titulodojogo">1</h3>
             </div>
             -->
-
             <div class="quadrodapalavra">
                 <!--<h3 class="titulodojogo">2</h3>-->
                 <div class="painel-palavra">
-                    <input id="letra1" onclick="juntarLetra( pegarLetra( this ), palavra, tamanho )" type="button" value="A">
+                    <!--
+                    <input id="?" type="button" value="?" onclick="Assembly( this )" >
+                    -->
+                    <input id="letra1" type="button" value="A" onclick="removerLetra( this.parentNode, 1 )" >
 
-                    <input id="letra2" onclick="juntarLetra()" type="button" value="B">
+                    <input id="letra2" type="button" value="B" onclick="removerLetra( this.parentNode, 2 )" >
 
-                    <input id="letra3" onclick="juntarLetra()" type="button" value="C">
+                    <input id="letra3" type="button" value="C" onclick="removerLetra( this.parentNode, 3 )" >
 
-                    <input id="letra4" onclick="juntarLetra()" type="button" value="D">
+                    <input id="letra4" type="button" value="D" onclick="removerLetra( this.parentNode, 4 )" >
 
-                    <input id="letra5" onclick="juntarLetra()" type="button" value="E">
+                    <input id="letra5" type="button" value="E" onclick="removerLetra( this.parentNode, 5 )" >
 
-                    <input id="letra6" onclick="juntarLetra()" type="button" value="F">
+                    <input id="letra6" type="button" value="F" onclick="removerLetra( this.parentNode, 6 )" >
 
-                    <input id="letra7" onclick="juntarLetra()" type="button" value="G">
+                    <input id="letra7" type="button" value="G" onclick="removerLetra( this.parentNode, 7 )" >
 
-                    <input id="letra8" onclick="juntarLetra()" type="button" value="H">
+                    <input id="letra8" type="button" value="H" onclick="removerLetra( this.parentNode, 8 )" >
 
-                    <input id="letra9" onclick="juntarLetra()" type="button" value="I">
+                    <input id="letra9" type="button" value="I" onclick="removerLetra( this.parentNode, 9 )" >
                 </div>
-
                 <div class="painel-resposta">
                     <!--<input type="search" name="sequência" id="RESULTADO">-->
                     <div id="RESULTADO">
@@ -69,11 +70,9 @@
                 </div>
             </div>
             
-            <!--
-            <div class="PAINELDAPALAVRA">
+            <div class="cronometro" onload="montarCronometro( this )">
                 <h3 class="titulodojogo">3</h3>
             </div>
-            -->
         </div>
 
         <div class="guia">
